@@ -1,0 +1,251 @@
+% !TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resume/CV template by Vahan Nanumyan 
+% 9 Jan 2019
+%
+% Based on Deedy by Debarghya Das (http://debarghyadas.com)
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues from Deedy:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{vn-resume}
+\newcommand*\bul{\textbullet{}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Vahan Nanumyan} % NAME
+{Dr.\ sc.\ ETH Zurich} %  TITLE
+{me} % PHOTO
+{%  CONTACT DETAILS
+\urlstyle{same}%
+\href{mailto:vahan@nanumyan.com}{vahan@nanumyan.com} \qquad%
++41\,78\,715\,72\,64 \qquad %
+Zurich, Switzerland \qquad \\%
+\href{http://www.sg.ethz.ch/people/vnanumyan}{www.sg.ethz.ch/people/vnanumyan} \qquad%
+GitHub:// \href{https://github.com/nanumyan}{nanumyan}\qquad%
+LinkedIn:// \href{https://www.linkedin.com/in/nanumyan/}{nanumyan}\qquad%
+}{ % DESCRIPTION
+ Post-doctoral data science researcher at ETH Zurich.  
+ Experienced in teaching large classes and in directly supervising students.  
+ Skilled in random graphs, large-scale data analysis, statistics \& machine learning, data visualisation.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.3\textwidth} 
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EDUCATION
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Education} 
+    
+    \subsection{ETH Zurich}
+    \descript{Doctor of Sciences}
+    \location{May 2018 | Zurich, Switzerland}
+    thesis: \emph{Structure and Dynamics of Collaborative Knowledge Networks}
+    \sectionsep
+    
+    \subsection{ETH Zurich}
+    \descript{MSc in Physics}
+    \location{May 2014 | Zurich, Switzerland}
+    thesis: \emph{Master Equations for Heterogeneous Evolution of Interdependent Networks}\\
+    \location{graded 6.0 / 6.0}
+    \sectionsep
+    
+    \subsection{Yerevan State University}
+    \descript{BSc in Physics}
+    \location{May 2010 | Yerevan, Armenia}
+    thesis: \emph{Light waves in 1D photonic crystals with arbitrarily changing dielectric and magnetic permittivities}\\
+    \location{GPA: 4.0 / 4.0, honours}
+    \sectionsep
+    
+    %%%%%%%%%%
+    %     LINKS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % \section{Links} 
+    % Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+    % LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     COURSEWORK
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % \section{Coursework}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     SKILLS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Skills}
+    
+    \subsection{Languages}
+    \begin{tabular}{@{}ll}
+        English   &  Fluent \\
+        German    &  Beginner \\
+        Armenian  &  Native \\
+        Russian   &  Native equal
+    \end{tabular}
+    \sectionsep
+    
+    \subsection{Analytical}
+    Graphs and Network Theory \\ 
+    Multivariate Statistics \\
+    Machine Learning \\    
+    % Agent-Based Modelling \\
+    % Statistical Physics \\
+    Social Network Analysis \\
+    % Hypothesis + Data Driven Research
+    \sectionsep
+    
+
+    \subsection{Programming}
+    \location{Over 5000 lines:}
+    Python \bul\ R \bul\ \LaTeX\ \\
+    \location{Over 1000 lines:}
+    SQL \bul\ Neo4j Cypher \\
+    HTML \bul\ CSS \bul\ Mathematica\\    
+    \location{Familiar:}
+    Javascript \bul\ Bash \bul\ C \bul\ PHP \bul\ Matlab
+    \sectionsep
+
+    \subsection{Visualisation}
+    \location{Data:}
+    D3.js \bul\ Matplotlib \bul\ ggplot2 \bul\ Gephi \\
+    \location{Illustration:}
+    Adobe Photoshop \& Illustrator \bul\ Inkscape \bul\ GIMP \\
+    \location{3D Graphics and CAD:}
+    Blender \bul\ AutoCAD \bul\ 3ds Max \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     COLUMN TWO
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Experience}
+    \runsubsection{ETH Zurich -- Chair of Systems Design}
+    \descript{| Researcher \& Lecturer }
+    \location{Jan 2013 - Present | Zurich, Switzerland}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+        \item As a PostDoc and previously a Doctoral candidate, developing new statistical methods for large and complex networked systems and applying these to real-world problems, e.g., for identifying fraudulent behaviour in socio-technical systems.
+        % \item  Out-of-network prediction based on a network regression model
+        % \item PhD research, FoF, Hypernets, Stat Phys of networks, coupled growth of multilayers, data?
+        \item Supervised 6 MSc student projects, teaching \emph{Systems Dynamics \& Complexity} (150 students), \emph{Agent-Based Modelling} and \emph{Complex Networks} together with Prof.~Frank Schweitzer
+        \item System administration for the group including maintenance of Linux servers, a small computing cluster and about 15 user laptops
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{Dinamica Testing Centre}
+    \descript{| Frontend Web Developer }
+    \location{Feb 2011 – Sep 2011 | Yerevan, Armenia}
+    \begin{tightemize}
+        \item Designed and coded multiple small websites for WordPress and proprietary CMS
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{Andava Digital Marketing Agency}
+    \descript{| SEO Specialist }
+    \location{Jan 2010 – Jan 2011 | Yerevan, Armenia}
+    \begin{tightemize}
+        \item SEO for the websites of a Moscow-based travel company by means of code \& content optimisation and growth of incoming links from bloggers
+    \end{tightemize}
+    \sectionsep
+    
+    \runsubsection{Eurostan-Uyut}
+    \descript{| Technical Drawing \& 3D Visualisation}
+    \location{Jan 2004 – Dec 2009 | Yerevan, Armenia}
+    \begin{tightemize}
+        \item Intermediary between company engineers and customers in construction 
+        \item Provided CAD technical drawings to engineers and 3D visualisation for the customers
+    \end{tightemize}
+    \sectionsep
+    
+    
+    % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % %     RESEARCH
+    % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % \section{Research}
+    % \runsubsection{Cornell  Robot Learning Lab}
+    % \descript{| Researcher}
+    % \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+    % Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+    % \sectionsep
+    
+    % \runsubsection{Cornell Phonetics Lab}
+    % \descript{| Head Undergraduate Researcher}
+    % \location{Mar 2012 – May 2013 | Ithaca, NY}
+    % Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+    % \sectionsep
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     AWARDS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Awards} 
+    \begin{tabular}{@{}cl}
+    2011--2014  &   Scholarship for MSc studies, Luys Foundation \\
+    2011        &   Best MSc student in IT presidential award, Armenia \\
+    2009        &   Best BSc student in IT presidential award, Armenia \\
+    2006--2010  &   Excellence scholarship, Yerevan State University \\
+    \end{tabular}
+    \sectionsep
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     PUBLICATIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Selected Publications \& Working Papers} 
+    \vspace{10pt}
+    \begin{tightemize}
+        \item {\bf Nanumyan, V.}, \emph{Friend-or-Foe? Normalized Deviations in Discrete Asymmetric Distributions}, working paper
+        \item {\bf Nanumyan, V.}, Schweitzer, F.,  \emph{Modelling Coupled Growth of Multilayer Networks}, working paper
+        % \item {\bf Nanumyan, V.}, Zingg, C., Scholtes, I., Schweitzer, F.,  \emph{Social Influence on Attention Decay in Science,} working paper
+        \item Casiraghi, G., {\bf Nanumyan, V.},  \emph{Generalized Hypergeometric Ensembles of Random Graphs: the Configuration Model as an Urn Problem}, arXiv:1810.06495, submitted to SIAM J. Appl. Math.
+        \item Schweitzer, F., {\bf Nanumyan, V.},\emph{  A conceptual approach to model co-evolution of urban structures}, International Journal of Space Structures (2016): 31(1), pp43-51.
+        \item Schweitzer, F., {\bf Nanumyan, V.}, Tessone, C. J.,  Xia, X.,  \emph{How Do OSS Projects Change In Number And Size? A Large-Scale Analysis To Test A Model Of Project Growth}, Advances in Complex Systems (2015): 1550008.
+        \item {\bf Nanumyan, V.}, Garas, A., Schweitzer, F.,  \emph{The Network of Counterparty Risk: Analysing Correlations in OTC Derivatives}, PLoS ONE 10(9) (2015): e0136638. 
+    \end{tightemize}
+    % \vspace{1em}
+    % % \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+    % \bibliographystyle{abbrv}
+    % \bibliography{publications}
+    % \nocite{*}    
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
